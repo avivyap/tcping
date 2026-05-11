@@ -49,10 +49,10 @@ function tcping(){
 
 				if timeout 2 bash -c "</dev/tcp/$ip/$port" 2>/dev/null;then
 
-					echo -e "\n${greenColour}[+]${endColour}${purpleColour} Host accessible on port $port${endColour}\n"
+					echo -e "\n${greenColour}[+]${endColour}${purpleColour} Host accessible on port $port seq=$ip{endColour}\n"
 				else
 
-					echo -e "\n${redColour}[!]${endColour}${purpleColour} Host reachable on port $port\n"
+					echo -e "\n${redColour}[!]${endColour}${purpleColour} Host reachable on port $port seq=$ip\n"
 
 				fi
 
