@@ -44,7 +44,7 @@ function tcping(){
 		if [[ $port =~ $regex_port ]]; then
 
 
-			for i in {1..2};do ### seguir configurando el bucle para hacer varios tcping
+			for i in {1..3};do ### seguir configurando el bucle para hacer varios tcping
 
 
 				if timeout 2 bash -c "</dev/tcp/$ip/$port" 2>/dev/null;then
